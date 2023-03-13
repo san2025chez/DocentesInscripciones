@@ -1,0 +1,8 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.principal .recap {
+  margin-bottom: 20px;
+}

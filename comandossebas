@@ -1,0 +1,22 @@
+EN POSTMAN
+localhost:3000/users
+POST-RAW-JSON
+
+{
+  "dni": "string",
+  "email": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "cuil": "string",
+  "situacion": "string",
+  "nivel": "string",
+  "nacimiento": "2022-02-16T13:07:44.030Z"
+}
+instalar 
+	sudo npm i -g @nestjs/cli
+
+instalar modulos para pm2
+	pm2 install module
+para correr backend: desde ubicacion del directorio backend_inscripciones
+	cd backend_inscripciones
+	pm2-runtime dist/main.js

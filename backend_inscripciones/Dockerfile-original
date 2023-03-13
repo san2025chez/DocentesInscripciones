@@ -1,0 +1,19 @@
+FROM  keymetrics/pm2:latest-alpine
+
+# Bundle APP files
+COPY src src/
+COPY package.json .
+COPY ecosystem.config.js .
+
+#RUN sudo npm i -g @nestjs/cli
+
+# Install app dependencies
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install --production
+RUN pm2 install module
+
+# Show current folder structure in logs
+RUN ls -al -R
+
+#CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+CMD [ "pm2-runtime", "start", "dist/main.js" ]

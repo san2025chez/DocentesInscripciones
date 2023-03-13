@@ -1,0 +1,10 @@
+{
+  "dni": "3293823787",
+  "email": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "cuil": "string",
+  "situacion": "string",
+  "nivel": "string",
+  "nacimiento": "2022-02-16T13:07:44.030Z"
+}
